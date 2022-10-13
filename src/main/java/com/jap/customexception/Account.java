@@ -16,7 +16,6 @@ public class Account {
     public void setAccountBalance(int accountBalance) {
         this.accountBalance = accountBalance;
     }
-
     public int withdraw(int amount) throws InsufficientFundException {
         if (amount < accountBalance) {
             return accountBalance - amount;
